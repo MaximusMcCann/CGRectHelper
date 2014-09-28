@@ -1,10 +1,10 @@
 CGRectHelper
 ============
 
-CGRect helper methods.
+CGRect helper methods for swift and Objective-C.  
 I only ask you star the project if you've used it.  Cheers.
 
-## Usage
+## Objective-C Usage
 	CGSize CGAddSizeToSize(CGSize size1, CGSize size2);
 	CGSize CGSubSizeFromSize(CGSize size1, CGSize size2);
 
@@ -33,5 +33,36 @@ I only ask you star the project if you've used it.  Cheers.
 
 	float CGRectRightX(CGRect rect);
 	float CGRectBottomY(CGRect rect);
+
+## Swift Usage
+
+	CGAddSizeToSize(s1: CGSize, s2: CGSize) -> CGSize
+	CGSubSizeFromSize(s1: CGSize, s2: CGSize) -> CGSize
+
+	CGAddPointToPoint(p1: CGPoint, p2: CGPoint) -> CGPoint
+	CGSubPointFromPoint(p1: CGPoint, p2: CGPoint) -> CGPoint
+
+	CGRectSetWidth(r: CGRect, w: CGFloat) -> CGRect
+	CGRectAddWidth(r: CGRect, w: CGFloat) -> CGRect
+
+	CGRectSetHeight(r: CGRect, h: CGFloat) -> CGRect
+	CGRectAddHeight(r: CGRect, h: CGFloat) -> CGRect
+
+	CGRectSetSize(r: CGRect, s: CGSize) -> CGRect
+	CGRectAddSize(r: CGRect, s: CGSize) -> CGRect
+	CGRectSubSize(r: CGRect, s: CGSize) -> CGRect
+
+	CGRectSetX(r: CGRect, x: CGFloat) -> CGRect
+	CGRectAddX(r: CGRect, x: CGFloat) -> CGRect
+
+	CGRectSetY(r: CGRect, y: CGFloat) -> CGRect
+	CGRectAddY(r: CGRect, y: CGFloat) -> CGRect
+
+	CGRectSetOrigin(r: CGRect, o: CGPoint) -> CGRect
+	CGRectAddOrigin(r: CGRect, o: CGPoint) -> CGRect
+	CGRectSubOrigin(r: CGRect, o: CGPoint) -> CGRect
+
+	CGRectRightX(r: CGRect) -> CGFloat
+	CGRectBottomY(r: CGRect) -> CGFloat
 
 MIT License.  Use at your own risk.
