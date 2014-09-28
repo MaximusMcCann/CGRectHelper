@@ -1,0 +1,4 @@
+CGRectHelper
+============
+
+CGRect helper methods
