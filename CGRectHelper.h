@@ -8,10 +8,10 @@
 #import <Foundation/Foundation.h>
 
 CGSize CGAddSizeToSize(CGSize size1, CGSize size2);
-CGSize CGSubSizeToSize(CGSize size1, CGSize size2);
+CGSize CGSubSizeFromSize(CGSize size1, CGSize size2);
 
 CGPoint CGAddPointToPoint(CGPoint point1, CGPoint point2);
-CGPoint CGSubPointToPoint(CGPoint point1, CGPoint point2);
+CGPoint CGSubPointFromPoint(CGPoint point1, CGPoint point2);
 
 CGRect CGRectSetWidth(CGRect rect, CGFloat width);
 CGRect CGRectAddWidth(CGRect rect, CGFloat width);
