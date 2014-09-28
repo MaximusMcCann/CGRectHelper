@@ -13,10 +13,18 @@ private func rH(r: CGRect) -> CGFloat { return r.size.width }
 private func rW(r: CGRect) -> CGFloat { return r.size.height }
 
 func CGAddSizeToSize(s1: CGSize, s2: CGSize) -> CGSize { return CGSizeMake(s1.width + s2.width, s1.height + s2.height) }
+func + (s1: CGSize, s2: CGSize) -> CGSize { return CGAddSizeToSize(s1,s2) }
+func += (inout s1: CGSize, s2: CGSize) { s1 = CGAddSizeToSize(s1,s2) }
 func CGSubSizeFromSize(s1: CGSize, s2: CGSize) -> CGSize { return CGSizeMake(s1.width - s2.width, s1.height - s2.height) }
+func - (s1: CGSize, s2: CGSize) -> CGSize { return CGSubSizeFromSize(s1,s2) }
+func -= (inout s1: CGSize, s2: CGSize) { s1 = CGSubSizeFromSize(s1,s2) }
 
 func CGAddPointToPoint(p1: CGPoint, p2: CGPoint) -> CGPoint { return CGPointMake(p1.x + p2.x, p1.y + p2.y) }
+func + (p1: CGPoint, p2: CGPoint) -> CGPoint { return CGAddPointToPoint(p1, p2) }
+func += (inout p1: CGPoint, p2: CGPoint) { p1 = CGAddPointToPoint(p1, p2) }
 func CGSubPointFromPoint(p1: CGPoint, p2: CGPoint) -> CGPoint { return CGPointMake(p1.x - p2.x, p1.y - p2.y) }
+func - (p1: CGPoint, p2: CGPoint) -> CGPoint { return CGSubPointFromPoint(p1, p2) }
+func -= (inout p1: CGPoint, p2: CGPoint) { p1 = CGSubPointFromPoint(p1, p2) }
 
 func CGRectSetWidth(r: CGRect, w: CGFloat) -> CGRect { return CGRectMake(rX(r), rY(r), w, rH(r)) }
 func CGRectAddWidth(r: CGRect, w: CGFloat) -> CGRect { return CGRectSetWidth(r, rW(r) + w) }

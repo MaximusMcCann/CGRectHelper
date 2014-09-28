@@ -37,10 +37,18 @@ I only ask you star the project if you've used it.  Cheers.
 ## Swift Usage
 
 	CGAddSizeToSize(s1: CGSize, s2: CGSize) -> CGSize
+	+ -> CGSize
+	+=
 	CGSubSizeFromSize(s1: CGSize, s2: CGSize) -> CGSize
+	- -> CGSize
+	-=
 
 	CGAddPointToPoint(p1: CGPoint, p2: CGPoint) -> CGPoint
+	+ -> CGPoint
+	+=
 	CGSubPointFromPoint(p1: CGPoint, p2: CGPoint) -> CGPoint
+	- -> CGPoint
+	-=
 
 	CGRectSetWidth(r: CGRect, w: CGFloat) -> CGRect
 	CGRectAddWidth(r: CGRect, w: CGFloat) -> CGRect
