@@ -33,5 +33,5 @@ CGRect CGRectSetOrigin(CGRect rect, CGPoint origin);
 CGRect CGRectAddOrigin(CGRect rect, CGPoint origin);
 CGRect CGRectSubOrigin(CGRect rect, CGPoint origin);
 
-float CGRectRightX(CGRect rect);
-float CGRectBottomY(CGRect rect);
+CGFloat CGRectRightX(CGRect rect);
+CGFloat CGRectBottomY(CGRect rect);

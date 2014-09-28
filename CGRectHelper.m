@@ -7,10 +7,10 @@
 
 #import "CGRectHelper.h"
 
-float rX(CGRect r) { return r.origin.x; }
-float rY(CGRect r) { return r.origin.y; }
-float rW(CGRect r) { return r.size.width; }
-float rH(CGRect r) { return r.size.height; }
+CGFloat rX(CGRect r) { return r.origin.x; }
+CGFloat rY(CGRect r) { return r.origin.y; }
+CGFloat rW(CGRect r) { return r.size.width; }
+CGFloat rH(CGRect r) { return r.size.height; }
 
 CGSize CGAddSizeToSize(CGSize s1, CGSize s2) { return CGSizeMake(s1.width + s2.width, s1.height + s2.height); }
 CGSize CGSubSizeFromSize(CGSize s1, CGSize s2) { return CGSizeMake(s1.width - s2.width, s1.height - s2.height); }
@@ -38,5 +38,5 @@ CGRect CGRectSetOrigin(CGRect r, CGPoint o) { return CGRectMake(o.x, o.y, rW(r),
 CGRect CGRectAddOrigin(CGRect r, CGPoint o) { return CGRectSetOrigin(r, CGAddPointToPoint(r.origin, o)); }
 CGRect CGRectSubOrigin(CGRect r, CGPoint o) { return CGRectSetOrigin(r, CGSubPointFromPoint(r.origin, o)); }
 
-float CGRectRightX(CGRect r) { return MAX(0, rX(r)) + rW(r); }
-float CGRectBottomY(CGRect r) { return MAX(0, rY(r)) + rH(r); }
+CGFloat CGRectRightX(CGRect r) { return rX(r) + rW(r); }
+CGFloat CGRectBottomY(CGRect r) { return rY(r) + rH(r); }
