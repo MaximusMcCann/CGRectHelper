@@ -7,10 +7,10 @@
 
 import UIKit
 
-func rX(r: CGRect) -> CGFloat { return r.origin.x }
-func rY(r: CGRect) -> CGFloat { return r.origin.y }
-func rH(r: CGRect) -> CGFloat { return r.size.width }
-func rW(r: CGRect) -> CGFloat { return r.size.height }
+private func rX(r: CGRect) -> CGFloat { return r.origin.x }
+private func rY(r: CGRect) -> CGFloat { return r.origin.y }
+private func rH(r: CGRect) -> CGFloat { return r.size.width }
+private func rW(r: CGRect) -> CGFloat { return r.size.height }
 
 func CGAddSizeToSize(s1: CGSize, s2: CGSize) -> CGSize { return CGSizeMake(s1.width + s2.width, s1.height + s2.height) }
 func CGSubSizeFromSize(s1: CGSize, s2: CGSize) -> CGSize { return CGSizeMake(s1.width - s2.width, s1.height - s2.height) }
