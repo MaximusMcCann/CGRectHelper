@@ -2,7 +2,6 @@ CGRectHelper
 ============
 
 CGRect helper methods for Swift and Objective-C.  
-I only ask you star the project if you've used it.  Cheers.
 
 ## Objective-C Usage
 	CGSize CGAddSizeToSize(CGSize size1, CGSize size2);
